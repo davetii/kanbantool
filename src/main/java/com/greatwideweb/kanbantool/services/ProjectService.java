@@ -17,7 +17,6 @@ public class ProjectService {
             return projectRepo.save(p);
         } catch(Exception e) {
             throw new ProjectIdException("Project Id '" + p.getProjectIdentifier());
-
         }
     }
 
