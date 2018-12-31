@@ -28,4 +28,9 @@ public class ProjectService {
         }
         return p;
     }
+
+    public void deleteProjectByIdentifier(String projectIdentifier) {
+        Project project = findProjectByIdentifier(projectIdentifier);
+        projectRepo.delete(project);
+    }
 }
