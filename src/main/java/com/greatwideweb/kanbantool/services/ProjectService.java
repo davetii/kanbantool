@@ -19,6 +19,9 @@ public class ProjectService {
             throw new ProjectIdException("Project Id '" + p.getProjectIdentifier());
 
         }
+    }
 
+    public Project findProjectByIdentifier(String projectIdentifier) {
+        return projectRepo.findByProjectIdentifier(projectIdentifier);
     }
 }
