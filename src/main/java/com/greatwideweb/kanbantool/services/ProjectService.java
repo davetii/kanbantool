@@ -28,4 +28,8 @@ public class ProjectService {
         }
         return p;
     }
+
+    public Iterable<Project> findAllProjects() {
+        return projectRepo.findAll();
+    }
 }
